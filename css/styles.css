@@ -11006,3 +11006,52 @@ section.resume-section .resume-section-content {
 .vh-75 {
   height: 75vh;
 }
+
+/* ===== Sidebar + Footer Theme ===== */
+
+/* Brand gradient */
+:root {
+    --brand-grad: linear-gradient(180deg, #0b1020, #101a33, #0f3d3e);
+}
+
+/* Sidebar background */
+#sideNav {
+    background: var(--brand-grad) !important;
+    box-shadow: 4px 0 18px rgba(0, 0, 0, 0.45);
+    border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Footer background */
+#footer {
+    background: var(--brand-grad) !important;
+    box-shadow: 0 -4px 18px rgba(0, 0, 0, 0.45);
+}
+
+/* Make logo stand out */
+#sideNav .navbar-brand img {
+    background: rgba(255,255,255,0.12);
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow:
+        0 0 0 2px rgba(255,255,255,0.25),
+        0 8px 18px rgba(0,0,0,0.6);
+}
+
+/* Nav links clarity */
+#sideNav .nav-link {
+    color: rgba(255,255,255,0.85);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+#sideNav .nav-link:hover {
+    color: #5eead4;
+}
+
+/* Mobile top bar */
+@media (max-width: 991px) {
+    #sideNav {
+        background: linear-gradient(90deg, #0b1020, #101a33, #0f3d3e) !important;
+        box-shadow: 0 4px 14px rgba(0,0,0,.4);
+    }
+}
